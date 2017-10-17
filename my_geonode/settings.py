@@ -27,7 +27,7 @@ from geonode.settings import *
 PROJECT_NAME = 'my_geonode'
 
 # per-deployment settings should go here
-SITEURL = os.getenv('SITEURL',"http://localhost:8000/")
+SITEURL = os.getenv('SITEURL',"http://doargeonode.com/")
 SITENAME = 'my_geonode'
 
 # SECRET_KEY = '************************'
@@ -40,7 +40,7 @@ LOCAL_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 WSGI_APPLICATION = "{}.wsgi.application".format(PROJECT_NAME)
 
-ALLOWED_HOSTS = ['localhost', 'django'] if os.getenv('ALLOWED_HOSTS') is None \
+ALLOWED_HOSTS = ['doargeonode.com', 'django'] if os.getenv('ALLOWED_HOSTS') is None \
     else re.split(r' *[,|:|;] *', os.getenv('ALLOWED_HOSTS'))
 
 # Location of url mappings
